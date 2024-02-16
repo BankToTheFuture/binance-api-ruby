@@ -16,3 +16,5 @@ config/config.yml
 
 .rakeTasks
 .DS_Store
+
+.ruby-version
