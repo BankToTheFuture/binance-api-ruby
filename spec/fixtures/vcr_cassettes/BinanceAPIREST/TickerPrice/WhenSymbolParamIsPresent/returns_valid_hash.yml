@@ -2,21 +2,21 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT
+    uri: https://testnet.binance.vision/api/v3/ticker/price?symbol=BTCUSDT
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
-      - rest-client/2.0.2 (darwin19.3.0 x86_64) ruby/2.6.5p114
+      - rest-client/2.1.0 (darwin24 arm64) ruby/3.3.8p144
       X-Mbx-Apikey:
-      - b3gxC40YDY5UaGj4uxr5feKb5hM03aJQ8ke79sn3Kbi55IntSvVp3cqXajeTYZpk
+      - YdctvIyDajSJLCSZWqxwiE4atZIAWzs3o0TIuvqKzXTXC92HrnGT6xlxtjtvzDHc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
-      - api.binance.com
+      - testnet.binance.vision
   response:
     status:
       code: 200
@@ -25,19 +25,21 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '45'
+      - '46'
       Connection:
       - keep-alive
       Date:
-      - Wed, 14 Oct 2020 09:26:04 GMT
+      - Sat, 12 Jul 2025 10:52:24 GMT
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
       Server:
       - nginx
       X-Mbx-Uuid:
-      - 3e55e859-70bb-4918-aaa4-9e1169f42f8b
+      - 39f5aa26-7f7e-4d4a-bf91-f2e8edcd957a
       X-Mbx-Used-Weight:
-      - '2'
+      - '4'
       X-Mbx-Used-Weight-1m:
-      - '2'
+      - '4'
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains
       X-Frame-Options:
@@ -60,18 +62,16 @@ http_interactions:
       - '0'
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, OPTIONS
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 0b3cd120321973f1462a42e82c43c1cd.cloudfront.net (CloudFront)
+      - 1.1 9f886054ff6f095f177ce8fc0f0175ee.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - AMS50-C1
+      - WAW51-P4
       X-Amz-Cf-Id:
-      - QgCjx6P_9nMdtTM6YnB76lcCCVZmf_d6bcOSZeqcLHAGchtvE3YCqA==
+      - FBSXcApPsK8rHcrU4tWXVG_PwmzeG1rvjnRE3UsW0IzgfAAz76nAQA==
     body:
       encoding: UTF-8
-      string: '{"symbol":"BTCUSDT","price":"11425.48000000"}'
-  recorded_at: Wed, 14 Oct 2020 09:26:04 GMT
-recorded_with: VCR 6.0.0
+      string: '{"symbol":"BTCUSDT","price":"118064.33000000"}'
+  recorded_at: Sat, 12 Jul 2025 10:52:24 GMT
+recorded_with: VCR 6.2.0

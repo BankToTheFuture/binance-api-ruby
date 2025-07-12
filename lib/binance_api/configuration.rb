@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'ostruct'
+
 module BinanceAPI
   module Configuration
     DEFAULT_CONFIG = { testnet_mode: false }.freeze

@@ -2,19 +2,19 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.binance.com/api/v1/ping
+    uri: https://testnet.binance.vision/api/v1/ping
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
-      - rest-client/2.0.2 (darwin19.5.0 x86_64) ruby/2.6.5p114
+      - rest-client/2.1.0 (darwin24 arm64) ruby/3.3.8p144
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
-      - api.binance.com
+      - testnet.binance.vision
   response:
     status:
       code: 200
@@ -27,11 +27,13 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 30 Sep 2020 19:11:25 GMT
+      - Sat, 12 Jul 2025 10:53:24 GMT
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
       Server:
       - nginx
       X-Mbx-Uuid:
-      - deaec5ee-1377-43fa-b31a-3a9b5fe3dcdd
+      - 39f5aa26-7f7e-4d4a-bf91-f2e8edcd957a
       X-Mbx-Used-Weight:
       - '2'
       X-Mbx-Used-Weight-1m:
@@ -58,18 +60,16 @@ http_interactions:
       - '0'
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, OPTIONS
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 1064639c622430d6b0382968293fd56e.cloudfront.net (CloudFront)
+      - 1.1 dab3343ac4d8366d61f167067fa9f9d2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - LHR62-C4
+      - WAW51-P4
       X-Amz-Cf-Id:
-      - KWOEJn_QqhA63qhbQYuO4hFGLupRh2oZbhQf6XKubAjf7bmEROBhKw==
+      - ySF3uFMFQv0moHISoviA-V5KQxvPWewbv31Z4x_nuwIZ7-JZZfO8aQ==
     body:
       encoding: UTF-8
       string: "{}"
-  recorded_at: Wed, 30 Sep 2020 19:11:25 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 12 Jul 2025 10:53:24 GMT
+recorded_with: VCR 6.2.0

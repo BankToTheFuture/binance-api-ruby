@@ -2,25 +2,25 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.binance.com/api/v3/order/test
+    uri: https://testnet.binance.vision/api/v3/order/test
     body:
       encoding: UTF-8
-      string: symbol=BTCUSDT&type=MARKET&side=SELL&quantity=10.0&recvWindow=5000&timestamp=1601479796000&signature=bba9107b3ba1e2ac6b1cda265b4a88b05fc352841e06fd5632a08d30d1b63202
+      string: symbol=BTCUSDT&type=MARKET&side=SELL&quantity=10.0&recvWindow=5000&timestamp=1752317626000&signature=58b4536cabd6bf96a012295dd3de29fad29fe0e5ef8c66dcb28a38a9c84a17c3
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
-      - rest-client/2.0.2 (darwin19.5.0 x86_64) ruby/2.6.5p114
+      - rest-client/2.1.0 (darwin24 arm64) ruby/3.3.8p144
       X-Mbx-Apikey:
-      - b3gxC40YDY5UaGj4uxr5feKb5hM03aJQ8ke79sn3Kbi55IntSvVp3cqXajeTYZpk
+      - YdctvIyDajSJLCSZWqxwiE4atZIAWzs3o0TIuvqKzXTXC92HrnGT6xlxtjtvzDHc
       Content-Length:
       - '165'
       Content-Type:
       - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
-      - api.binance.com
+      - testnet.binance.vision
   response:
     status:
       code: 200
@@ -33,15 +33,17 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 30 Sep 2020 15:29:57 GMT
+      - Sat, 12 Jul 2025 10:53:46 GMT
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
       Server:
       - nginx
       X-Mbx-Uuid:
-      - 623381eb-85ad-493f-a2af-52acf58690b5
+      - 84f54019-5c69-4f66-8268-d2720799b5d9
       X-Mbx-Used-Weight:
-      - '1'
+      - '3'
       X-Mbx-Used-Weight-1m:
-      - '1'
+      - '3'
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains
       X-Frame-Options:
@@ -64,18 +66,16 @@ http_interactions:
       - '0'
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, OPTIONS
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 ab7ef1002486648bddb0e6bc684500bd.cloudfront.net (CloudFront)
+      - 1.1 d46dd2193f1a6fb006e1c1831b3d97a2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - LHR62-C4
+      - WAW51-P4
       X-Amz-Cf-Id:
-      - "-ii0NqU25z3zO_akIxif3kj6lx5NoF_gxnik7sDbaQOlpeY2hLkv5g=="
+      - x8TVNrHo_gdWX17nb4HCHnBHsFJVGkya-MMl3Vwb15ReT9zpmmHDoA==
     body:
       encoding: UTF-8
       string: "{}"
-  recorded_at: Wed, 30 Sep 2020 15:29:57 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 12 Jul 2025 10:53:46 GMT
+recorded_with: VCR 6.2.0

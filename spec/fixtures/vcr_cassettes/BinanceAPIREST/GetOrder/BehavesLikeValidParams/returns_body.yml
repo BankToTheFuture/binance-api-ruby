@@ -2,21 +2,21 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.binance.com/api/v3/order?orderId=1817387327&recvWindow=5000&signature=3793da6f430c3d6ee625b85c65ca03da06711cfeccfa2a6daca44a7f3c0cd168&symbol=ETHUSDT&timestamp=1601584491000
+    uri: https://testnet.binance.vision/api/v3/order?orderId=1817387327&recvWindow=5000&signature=788c3d88271a5aece8c59cfffacdd7b84430b78acef9174c11ef9ba3d1e6cb07&symbol=ETHUSDT&timestamp=1752317648000
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
-      - rest-client/2.0.2 (darwin19.5.0 x86_64) ruby/2.6.5p114
+      - rest-client/2.1.0 (darwin24 arm64) ruby/3.3.8p144
       X-Mbx-Apikey:
-      - b3gxC40YDY5UaGj4uxr5feKb5hM03aJQ8ke79sn3Kbi55IntSvVp3cqXajeTYZpk
+      - YdctvIyDajSJLCSZWqxwiE4atZIAWzs3o0TIuvqKzXTXC92HrnGT6xlxtjtvzDHc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
-      - api.binance.com
+      - testnet.binance.vision
   response:
     status:
       code: 200
@@ -25,21 +25,21 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '266'
+      - '1965'
       Connection:
       - keep-alive
       Date:
-      - Thu, 01 Oct 2020 20:34:51 GMT
+      - Sat, 12 Jul 2025 10:00:27 GMT
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
       Server:
       - nginx
       X-Mbx-Uuid:
-      - 9a775a48-f093-431b-9c1b-b2ffbd85f008
+      - 39f5aa26-7f7e-4d4a-bf91-f2e8edcd957a
       X-Mbx-Used-Weight:
-      - '2'
+      - '20'
       X-Mbx-Used-Weight-1m:
-      - '2'
-      Content-Encoding:
-      - gzip
+      - '20'
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains
       X-Frame-Options:
@@ -62,19 +62,16 @@ http_interactions:
       - '0'
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, OPTIONS
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 f79355bad214d64e02ae8e84a86f4933.cloudfront.net (CloudFront)
+      - 1.1 12b650bf7b8d3f0f17a10fc9f2346f04.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - LHR61-C2
+      - WAW51-P4
       X-Amz-Cf-Id:
-      - eDDfm3Dul8pdfCP_ndFBaUNJY_8rd8n706kOc-u7dEYk9Mtvznp5vw==
+      - HNhWX_XRWdudJvj9g5_CpkjblJJH0-yF8w7-Pn8YthEh9jOKT8QMCQ==
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAA/21Q0U6DQBD8l3vGhrPAIW+mpYo91FqMxjcKG3IVOHK3ZyTGf5ejaB9k33ZmsjM7X0T3zUHWJCJxdvu8X2fEIVKVoJKSRDSkbBmy5SWbQC40WuKCOqSoBbT48KslxyrdvqXH1R2NNX/lyX2w9Nl6ONcpUcAgcBfuNKOHqHbYn2DvD4ZPKAxCOUMVpmlMnaP4gJ2RCCcJ9RYBC71JozFHowd4k3AeW3MUDSTtRqoxwk22sljf2SW9ftrG9l8tSrvvY87HG7J7nIs8QAdQ59RnxpoMbQUu9X3mhy69ChxiujJHyOYooV+kehdtRSJUBqY27FNjnf8cvn8ACllH7qcBAAA=
-  recorded_at: Thu, 01 Oct 2020 20:34:52 GMT
-recorded_with: VCR 6.0.0
+      string: '{"symbol":"ETHUSDT","orderId":1817387327,"orderListId":-1,"clientOrderId":"HzU7zvxnKxxQgTaDTPcDIm","transactTime":1752315600989,"price":"0.00000000","origQty":"0.04000000","executedQty":"0.04000000","origQuoteOrderQty":"0.00000000","cummulativeQuoteQty":"118.94800000","status":"FILLED","timeInForce":"GTC","type":"MARKET","side":"SELL","workingTime":1752315600989,"fills":[{"price":"2973.70000000","qty":"0.04000000","commission":"0.00000000","commissionAsset":"USDT","tradeId":551106}],"selfTradePreventionMode":"EXPIRE_MAKER"}'
+  recorded_at: Sat, 12 Jul 2025 10:54:08 GMT
+recorded_with: VCR 6.2.0

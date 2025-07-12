@@ -1,79 +1,91 @@
 PATH
   remote: .
   specs:
-    binance_api (1.2.0)
-      rest-client (~> 2.1)
-      websocket-client-simple (~> 0.8.0)
+    binance_api (1.3.0)
+      base64
+      ostruct
+      rest-client
+      websocket-client-simple
 
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.6)
-      public_suffix (>= 2.0.2, < 6.0)
-    bigdecimal (3.1.6)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.3.0)
+    bigdecimal (3.2.2)
     coderay (1.1.3)
     crack (1.0.0)
       bigdecimal
       rexml
-    diff-lcs (1.5.1)
+    diff-lcs (1.6.2)
     domain_name (0.6.20240107)
     event_emitter (0.2.6)
-    hashdiff (1.1.0)
+    hashdiff (1.2.0)
     http-accept (1.7.0)
-    http-cookie (1.0.5)
+    http-cookie (1.0.8)
       domain_name (~> 0.5)
-    method_source (1.0.0)
-    mime-types (3.5.2)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2024.0206)
+    logger (1.7.0)
+    method_source (1.1.0)
+    mime-types (3.7.0)
+      logger
+      mime-types-data (~> 3.2025, >= 3.2025.0507)
+    mime-types-data (3.2025.0708)
+    mutex_m (0.3.0)
     netrc (0.11.0)
-    pry (0.14.2)
+    ostruct (0.6.2)
+    pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    public_suffix (5.0.4)
-    rake (13.1.0)
+    public_suffix (6.0.2)
+    rake (13.3.0)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rexml (3.2.6)
-    rspec (3.13.0)
+    rexml (3.4.1)
+    rspec (3.13.1)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
       rspec-mocks (~> 3.13.0)
-    rspec-core (3.13.0)
+    rspec-core (3.13.5)
       rspec-support (~> 3.13.0)
-    rspec-expectations (3.13.0)
+    rspec-expectations (3.13.5)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
-    rspec-mocks (3.13.0)
+    rspec-mocks (3.13.5)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
-    rspec-support (3.13.0)
-    vcr (6.2.0)
-    webmock (3.20.0)
+    rspec-support (3.13.4)
+    vcr (6.3.1)
+      base64
+    webmock (3.25.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    websocket (1.2.10)
-    websocket-client-simple (0.8.0)
+    websocket (1.2.11)
+    websocket-client-simple (0.9.0)
+      base64
       event_emitter
+      mutex_m
       websocket
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  base64
   binance_api!
-  bundler (~> 2.5.6)
+  bundler
+  ostruct
   pry
   rake
-  rest-client (~> 2.1)
+  rest-client
   rspec
   vcr
   webmock
-  websocket-client-simple (~> 0.8.0)
+  websocket-client-simple
 
 BUNDLED WITH
-   2.5.6
+   2.6.9

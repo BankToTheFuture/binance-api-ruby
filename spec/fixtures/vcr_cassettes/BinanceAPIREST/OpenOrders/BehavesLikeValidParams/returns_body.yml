@@ -2,21 +2,21 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.binance.com/api/v3/openOrders?recvWindow=5000&signature=c077298a1c98f25ce9f4db6b58a154d1d1b339a205517f5fb4a235b2c01ca17a&timestamp=1601584901000
+    uri: https://testnet.binance.vision/api/v3/openOrders?recvWindow=5000&signature=02c334459a9af180a8d24ba69d0af22c0a2791e373d6e9c411e7687a2d63f245&timestamp=1752315253000
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
-      - rest-client/2.0.2 (darwin19.5.0 x86_64) ruby/2.6.5p114
+      - rest-client/2.1.0 (darwin24 arm64) ruby/3.3.8p144
       X-Mbx-Apikey:
-      - b3gxC40YDY5UaGj4uxr5feKb5hM03aJQ8ke79sn3Kbi55IntSvVp3cqXajeTYZpk
+      - YdctvIyDajSJLCSZWqxwiE4atZIAWzs3o0TIuvqKzXTXC92HrnGT6xlxtjtvzDHc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
-      - api.binance.com
+      - testnet.binance.vision
   response:
     status:
       code: 200
@@ -29,15 +29,17 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 01 Oct 2020 20:41:42 GMT
+      - Sat, 12 Jul 2025 10:14:13 GMT
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
       Server:
       - nginx
       X-Mbx-Uuid:
-      - adcb1aae-8837-4083-931a-6ed661a379e0
+      - 84f54019-5c69-4f66-8268-d2720799b5d9
       X-Mbx-Used-Weight:
-      - '80'
+      - '160'
       X-Mbx-Used-Weight-1m:
-      - '80'
+      - '160'
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains
       X-Frame-Options:
@@ -60,18 +62,16 @@ http_interactions:
       - '0'
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, OPTIONS
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 6c75f370e2f32e8fc940abded097e39c.cloudfront.net (CloudFront)
+      - 1.1 0f7857c85f75e0919fec5346212caa26.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - LHR61-C2
+      - WAW51-P4
       X-Amz-Cf-Id:
-      - CTuPinGjphFRWyA2z_a8iPN6W5ehzHG3d8nwiZ9kvQPBeR3cbesAtQ==
+      - bYqTOqWqREkZKnDAPbvhj93sKJqfTUlm4ma42HO-vf0ahbjgC3nUdw==
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Thu, 01 Oct 2020 20:41:42 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 12 Jul 2025 10:14:13 GMT
+recorded_with: VCR 6.3.1

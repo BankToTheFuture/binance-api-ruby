@@ -18,3 +18,5 @@ config/config.yml
 .DS_Store
 
 .ruby-version
+
+.vscode/
