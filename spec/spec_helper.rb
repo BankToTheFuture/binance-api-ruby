@@ -34,6 +34,14 @@ RSpec.configure do |config|
   config.after(:each, :vcr) do
     VCR.eject_cassette
   end
+
+  config.before(:each, :binance_api_test_mode) do
+    BinanceAPI.configure { |config| config.testnet_mode = true }
+  end
+
+  config.after(:each, :binance_api_test_mode) do
+    BinanceAPI.configure { |config| config.testnet_mode = false }
+  end
 end
 
 def select_or_create_vcr_cassette(test_name: ,full_test_context:)

@@ -17,11 +17,15 @@ RSpec.shared_examples 'valid params' do |method_name, valid_params, response_key
     end
   end
 
-  it 'response success' do
+  it 'response success', :binance_api_test_mode do
     expect(result).to be_success
   end
 
-  it 'returns body' do
-    expect(given_response_keys).to include(*response_keys)
+  it 'returns body', :binance_api_test_mode do
+    if response_keys == []
+      expect(given_response_keys).to be_empty
+    else
+      expect(given_response_keys).to include(*response_keys)
+    end
   end
 end

@@ -2,13 +2,13 @@
 
 require 'spec_helper'
 
-RSpec.describe BinanceAPI::REST, :vcr do
+RSpec.describe BinanceAPI::REST , :vcr do
   subject(:subject) { BinanceAPI::REST.new }
 
   describe '.ticker_price' do
     let(:request) { subject.ticker_price(symbol: symbol) }
 
-    context 'when symbol param is present' do
+    context 'when symbol param is present', :binance_api_test_mode do
       let(:symbol) { 'BTCUSDT' }
 
       it 'response success' do
@@ -16,11 +16,11 @@ RSpec.describe BinanceAPI::REST, :vcr do
       end
 
       it 'returns valid hash' do
-        expect(request.value).to eq({ symbol: 'BTCUSDT', price: '11425.48000000' })
+        expect(request.value).to eq({ symbol: 'BTCUSDT', price: '118064.33000000' })
       end
     end
 
-    context 'when symbol param is not present' do
+    context 'when symbol param is not present', :binance_api_test_mode do
       let(:symbol) { nil }
 
       it 'response success' do
@@ -32,7 +32,7 @@ RSpec.describe BinanceAPI::REST, :vcr do
       end
 
       it 'returns valid hashes in array' do
-        expect(request.value.first).to eq({ symbol: 'ETHBTC', price: '0.03347600' })
+        expect(request.value.first).to eq({ symbol: 'ETHBTC', price: '0.02520000' })
       end
     end
 
@@ -58,7 +58,7 @@ RSpec.describe BinanceAPI::REST, :vcr do
   end
 
   describe '.ping' do
-    it_behaves_like 'valid params', :ping, {}, {}
+    it_behaves_like 'valid params', :ping, {}, []
   end
 
   describe '.order_test' do
@@ -104,7 +104,7 @@ RSpec.describe BinanceAPI::REST, :vcr do
   describe '.cancel_order' do
     it_behaves_like 'valid params',
                     :cancel_order,
-                    { symbol: 'ETHUSDT', orderId: 1_687_193_492 },
+                    { symbol: 'ETHUSDT', orderId: 3018490 },
                     %i[symbol orderId status side type]
     it_behaves_like 'correctly handles invalid api response', :cancel_order
   end
@@ -112,11 +112,13 @@ RSpec.describe BinanceAPI::REST, :vcr do
   context '#account' do
     let(:rest) { BinanceAPI.rest }
 
-    it 'matches schema' do
+    it 'matches schema', :binance_api_test_mode do
       expect(rest.account.value[:balances].first).to include(:asset, :free, :locked)
     end
 
-    it { expect(rest.account.success?).to be_truthy }
+    it 'returns successful account', :binance_api_test_mode do
+      expect(rest.account.success?).to be_truthy
+    end
 
     it_behaves_like 'correctly handles invalid api response', :account
   end

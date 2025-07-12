@@ -2,21 +2,21 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.binance.com/api/v3/allOrders?recvWindow=5000&signature=37ffaac9b734347150c00f944df0b59d43a170b58bd8a4dcfdaba196229e87db&symbol=ETHUSDT&timestamp=1601585262000
+    uri: https://testnet.binance.vision/api/v3/allOrders?recvWindow=5000&signature=61dc421c0942b1031884c6a4646ea142c1b3e52fb346c962d7b0ea399c4eb249&symbol=ETHUSDT&timestamp=1752314427000
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Accept:
       - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
       User-Agent:
-      - rest-client/2.0.2 (darwin19.5.0 x86_64) ruby/2.6.5p114
+      - rest-client/2.1.0 (darwin24 arm64) ruby/3.3.8p144
       X-Mbx-Apikey:
-      - b3gxC40YDY5UaGj4uxr5feKb5hM03aJQ8ke79sn3Kbi55IntSvVp3cqXajeTYZpk
+      - YdctvIyDajSJLCSZWqxwiE4atZIAWzs3o0TIuvqKzXTXC92HrnGT6xlxtjtvzDHc
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Host:
-      - api.binance.com
+      - testnet.binance.vision
   response:
     status:
       code: 200
@@ -25,21 +25,21 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '406'
+      - '1965'
       Connection:
       - keep-alive
       Date:
-      - Thu, 01 Oct 2020 20:47:42 GMT
+      - Sat, 12 Jul 2025 10:00:27 GMT
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
       Server:
       - nginx
       X-Mbx-Uuid:
-      - deaec5ee-1377-43fa-b31a-3a9b5fe3dcdd
+      - 39f5aa26-7f7e-4d4a-bf91-f2e8edcd957a
       X-Mbx-Used-Weight:
-      - '10'
+      - '40'
       X-Mbx-Used-Weight-1m:
-      - '10'
-      Content-Encoding:
-      - gzip
+      - '40'
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains
       X-Frame-Options:
@@ -62,19 +62,16 @@ http_interactions:
       - '0'
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, OPTIONS
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 3746550ac2cf89851f01a575c7b680a6.cloudfront.net (CloudFront)
+      - 1.1 7607e5ec63acf71933fb75db0ea2bb40.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - LHR61-C2
+      - WAW51-P4
       X-Amz-Cf-Id:
-      - KTLqM_a5f1IVVukDoynKC-28flfjehYeCNzeWjpjwJEiEvj0jCxPyw==
+      - uTTbJizTWeuVc861Q8oCNCAG2ZegRa5tk74f9Q2hk_2ZoRktXiKknA==
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAA/+WTW0/CMBiG/0uvkbRb1wN3HAZOhgqb8RRj2FZJkTGydSox/ne7iTgQ4yle2bvvfb98pye9fATZMg6SGWgA298/8To+qIEkjUTqRKCBCKOIm5gbK9GVmSqMPVQD4UyKuTp6zQX3Irg2LENQFCFMiYmpdcN5YCLOzXDMOAtYqIsvUhkKna79OuewfGVPORmqpTZgHcG1LB5EmCsR7bDCPI7z2VjJOzHMEyVeUkxcJ4y85mRqrPJMy13Hde2OVpSMhTPvJmk5RM9vF9pyUQSuM3CK9TMZFWHr5LyskCyOVyPDOnxrr6VApOuZK07RQt/O4hxThA2DYlID+SIaK+HvsmR2mqS3cj4BDZXmYnWLYqXyuO86PNU+ocYQNRk1GP0CtSZsHnstNkJ53PN8EqFTPyK0wmljtSoliD+kVLF2U0KaEmX4J5QGzVHfrmDybNf9FScCkWVRi3LMjC1Om9YfcTKNr3CaTgb9i8G0fYDszD1znUNiWrTzDzkxiPj2f9q0vs3p6hnUDLnhBwUAAA==
-  recorded_at: Thu, 01 Oct 2020 20:47:43 GMT
-recorded_with: VCR 6.0.0
+      string: '[{"symbol":"ETHUSDT","orderId":3012128,"orderListId":-1,"clientOrderId":"9akxLFaT6vksadz4QHJN2b","price":"0.00000000","origQty":"0.04000000","executedQty":"0.04000000","cummulativeQuoteQty":"118.73880000","status":"FILLED","timeInForce":"GTC","type":"MARKET","side":"SELL","stopPrice":"0.00000000","icebergQty":"0.00000000","time":1752312784245,"updateTime":1752312784245,"isWorking":true,"workingTime":1752312784245,"origQuoteOrderQty":"0.00000000","selfTradePreventionMode":"EXPIRE_MAKER"},{"symbol":"ETHUSDT","orderId":3012129,"orderListId":-1,"clientOrderId":"PmsCwO23AEDDD8SIfkOfoX","price":"0.00000000","origQty":"0.04000000","executedQty":"0.04000000","cummulativeQuoteQty":"118.73880000","status":"FILLED","timeInForce":"GTC","type":"MARKET","side":"SELL","stopPrice":"0.00000000","icebergQty":"0.00000000","time":1752312784582,"updateTime":1752312784582,"isWorking":true,"workingTime":1752312784582,"origQuoteOrderQty":"0.00000000","selfTradePreventionMode":"EXPIRE_MAKER"},{"symbol":"ETHUSDT","orderId":3012335,"orderListId":-1,"clientOrderId":"YjfCuSVAsehGKV14nhE6jk","price":"0.00000000","origQty":"0.04000000","executedQty":"0.04000000","cummulativeQuoteQty":"118.73880000","status":"FILLED","timeInForce":"GTC","type":"MARKET","side":"SELL","stopPrice":"0.00000000","icebergQty":"0.00000000","time":1752312834074,"updateTime":1752312834074,"isWorking":true,"workingTime":1752312834074,"origQuoteOrderQty":"0.00000000","selfTradePreventionMode":"EXPIRE_MAKER"},{"symbol":"ETHUSDT","orderId":3012336,"orderListId":-1,"clientOrderId":"5vv5Bim3SXKDC0VRG723oM","price":"0.00000000","origQty":"0.04000000","executedQty":"0.04000000","cummulativeQuoteQty":"118.73880000","status":"FILLED","timeInForce":"GTC","type":"MARKET","side":"SELL","stopPrice":"0.00000000","icebergQty":"0.00000000","time":1752312834413,"updateTime":1752312834413,"isWorking":true,"workingTime":1752312834413,"origQuoteOrderQty":"0.00000000","selfTradePreventionMode":"EXPIRE_MAKER"}]'
+  recorded_at: Sat, 12 Jul 2025 10:00:27 GMT
+recorded_with: VCR 6.3.1

@@ -1,4 +1,4 @@
-RSpec.describe BinanceAPI::WAPI do
+RSpec.describe BinanceAPI::WAPI, skip: 'Binance has delisted WAPI Endpoints' do
   let(:service) { BinanceAPI.wapi }
   context 'Returns a BinanceAPI::Rest' do
     it { expect(service).to be_a_kind_of(BinanceAPI::WAPI) }
